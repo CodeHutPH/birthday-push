@@ -1,0 +1,175 @@
+:root {
+  --bg-color: #e6f2ff;
+  --text-color: #333;
+  --heading-color: #3366cc;
+  --subheading-color: #4d94ff;
+  --progress-bg: #b3d9ff;
+  --progress-fill: #0052cc;
+  --card-bg: #ffffff;
+  --card-border: #b3d9ff;
+}
+
+.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --heading-color: #66b3ff;
+  --subheading-color: #99ccff;
+  --progress-bg: #333333;
+  --progress-fill: #0066cc;
+  --card-bg: #2a2a2a;
+  --card-border: #4d4d4d;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.future-card {
+  opacity: 0.7;
+  filter: blur(2px);
+  transition: all 0.3s ease;
+}
+
+.future-card:hover {
+  opacity: 1;
+  filter: blur(0);
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: var(--subheading-color);
+}
+
+h3 {
+  color: var(--subheading-color);
+}
+
+.progress-container {
+  background-color: var(--progress-bg);
+  border-radius: 20px;
+  height: 30px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.progress-bar {
+  background-color: var(--progress-fill);
+  height: 100%;
+  border-radius: 20px;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Add some festive elements */
+body::before,
+body::after {
+  content: "🎂";
+  font-size: 2em;
+  position: fixed;
+  top: 20px;
+}
+
+body::before {
+  left: 20px;
+}
+
+body::after {
+  right: 20px;
+}
+
+/* Update styles for the theme toggle button */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+#theme-toggle:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+/* Remove or adjust the cake emoji positioning */
+body::before,
+body::after {
+  content: "🎂";
+  font-size: 2em;
+  position: fixed;
+  top: 20px;
+}
+
+body::before {
+  left: 20px;
+}
+
+body::after {
+  right: 20px;
+}
+
+/* Remove bullets from the milestones list */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card ul {
+  display: inline-block;
+  text-align: center;
+}
