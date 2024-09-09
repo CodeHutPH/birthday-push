@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.toggle("dark-mode");
 
     if (body.classList.contains("dark-mode")) {
-      themeToggle.textContent = "🌑";
+      themeToggle.textContent = "🌙";
       themeToggle.setAttribute("aria-label", "Toggle light mode");
     } else {
       themeToggle.textContent = "☀️";
